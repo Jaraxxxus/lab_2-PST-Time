@@ -19,7 +19,7 @@ main()
     if(putenv("TZ=PST8PDT")){
         perror("Not enough memory for env \n");
      }
-    (void)time(&now);  //возвращает  время в секундах с 1/01/70г в now, при неудаче возвр -1 и в errno причина ошибки 
+    (void)time(&now);  //возвращает  время в секундах с 1/01/70г в now
     printf("%s", ctime(&now));  //возвращает адрес начала символьной строки
 
 
